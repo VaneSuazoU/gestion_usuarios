@@ -2,6 +2,8 @@
 
 Este microservicio forma parte de una aplicación de viajes con mascotas. Permite registrar y autenticar usuarios con distintos roles: `dueño de mascota` y `conductor pet-friendly`.
 
+Primera sumativa Desarrollo FullStack
+
 ## 🧱 Tecnologías
 - Java 24
 - Spring Boot 3.4.4
@@ -77,3 +79,4 @@ com.ms_c.gestion_usuarios
 
 Puedes usar navegador o Postman para probar los endpoints.
 
+---
