@@ -77,8 +77,3 @@ com.ms_c.gestion_usuarios
 
 Puedes usar navegador o Postman para probar los endpoints.
 
----
-
-## 📄 Licencia
-
-Proyecto académico - Duoc UC
