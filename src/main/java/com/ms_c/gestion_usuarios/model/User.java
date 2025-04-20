@@ -1,10 +1,25 @@
 package com.ms_c.gestion_usuarios.model;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "usuarios")
 public class User {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(nullable = false)
     private String nombre;
+
+    @Column(nullable = false, unique = true)
     private String correo;
+
+    @Column(nullable = false)
     private String rol;
+
+    @Column(nullable = false)
     private String contrasena;
 
     public User() {}
