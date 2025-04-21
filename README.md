@@ -33,6 +33,58 @@ GET /api/users
 
 ---
 
+### Obtener usuario por ID
+```http
+GET /api/users/{id}
+```
+**Ejemplo:**  
+[http://localhost:8080/api/users/1](http://localhost:8080/api/users/1)
+
+---
+
+### Crear nuevo usuario
+```http
+POST /api/users
+Content-Type: application/json
+```
+**Body JSON:**
+```json
+{
+  "nombre": "Valeria Silva",
+  "correo": "valeria@email.com",
+  "rol": "dueño de mascota",
+  "contrasena": "v1234"
+}
+```
+
+---
+
+### Actualizar usuario existente
+```http
+PUT /api/users/{id}
+Content-Type: application/json
+```
+**Body JSON:**
+```json
+{
+  "nombre": "Ana Torres",
+  "correo": "ana@email.com",
+  "rol": "dueño de mascota",
+  "contrasena": "nuevo1234"
+}
+```
+
+---
+
+### Eliminar usuario
+```http
+DELETE /api/users/{id}
+```
+**Ejemplo:**  
+[http://localhost:8080/api/users/3](http://localhost:8080/api/users/3)
+
+---
+
 ### Iniciar sesión
 ```http
 GET /api/login?correo={correo}&contrasena={contrasena}
@@ -79,4 +131,5 @@ com.ms_c.gestion_usuarios
 
 Puedes usar navegador o Postman para probar los endpoints.
 
----
+Ejemplos completos se encuentran en el archivo `pruebas_postman_usuarios.txt`.
+
