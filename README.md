@@ -35,18 +35,7 @@ Este microservicio puede ejecutarse también directamente desde DockerHub:
 docker run -p 8080:8080 vanesuazou/gestion_usuarios
 ```
 
-> Asegúrate de tener una base de datos Oracle en red accesible.
-
-En caso de correr localmente con Docker, actualiza `application.properties`:
-
-```properties
-spring.datasource.url=jdbc:oracle:thin:@host.docker.internal:1521:XE
-```
-
-Prueba en plataformas como:
-- https://labs.play-with-docker.com
-- https://railway.app
-- https://render.com
+👉 Imagen publicada: [https://hub.docker.com/r/vanesuazou/gestion_usuarios](https://hub.docker.com/r/vanesuazou/gestion_usuarios)
 
 ---
 
