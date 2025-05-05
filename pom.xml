@@ -8,7 +8,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.4.4</version>
+        <version>3.4.5</version>
         <relativePath/>
     </parent>
 
@@ -56,8 +56,29 @@
             <artifactId>ojdbc11</artifactId>
             <scope>runtime</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-hateoas</artifactId>
+        </dependency>
+
+        <!-- JUnit 5 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Mockito -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
+        
     <build>
     <plugins>
         <plugin>
